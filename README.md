@@ -5,14 +5,16 @@ This is designed as a base to start new plugins of and is thus designed as a min
 
 Build
 -----
-
 Standard cmake build, i.e.
+
 mkdir build && cd build
+
 cmake .. && make
 
 Dependencies
 ------------
 libprotobuf-dev
+
 libprotoc-dev
 
 Usage
