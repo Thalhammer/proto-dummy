@@ -1,0 +1,15 @@
+syntax = "proto3";
+// We import our custom options
+import "options.proto";
+
+message TestRequest {
+	string request = 1 [(dummy).dummyOption="opt"];
+}
+
+message TestResponse {
+	string response = 1;
+}
+
+service TestService {
+	rpc Search(TestRequest) returns (TestResponse);
+}
